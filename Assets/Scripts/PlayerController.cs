@@ -22,8 +22,8 @@ public class PlayerController : MonoBehaviour
     // Mover el player con los inputs
     void MovePlayer()
     {
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
+        float horizontalInput = Input.GetAxisRaw("Horizontal");
+        float verticalInput = Input.GetAxisRaw("Vertical");
 
         playerRb.AddForce(Vector3.right * speed * horizontalInput);
         playerRb.AddForce(Vector3.forward * speed * verticalInput);
