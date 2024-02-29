@@ -6,7 +6,7 @@ public class MoveToPlayer : MonoBehaviour
 {
     public GameObject player;
 
-    public float speed = 0.5f;
+    public float speed = 5f;
 
     private Rigidbody _objectRb;
     
